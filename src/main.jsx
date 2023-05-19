@@ -8,6 +8,8 @@ import router from './routes/Routes';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   
-    <RouterProvider router={router} />
+   <div className='max-w-7xl mx-auto'>
+     <RouterProvider router={router} />
   
+   </div>
 )
