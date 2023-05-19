@@ -1,18 +1,20 @@
+import logo from "../../../../public/assets/logo.png"
+
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 py-8">
+    <footer className="bg-gray-900 py-8 rounded">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center justify-between">
           <div className="w-full md:w-1/4 mb-4 md:mb-0">
-            <img src="" alt="Website Logo" className="h-8" />
+            <img src={logo} alt="Website Logo" className="h-28 rounded-2xl" />
             <p className="text-white mt-2">
-              &copy; 2023 Your Website Name. All rights reserved.
+              &copy; 2023 BrainBox Toys. All rights reserved.
             </p>
           </div>
           <div className="w-full md:w-1/4 mb-4 md:mb-0">
             <h4 className="text-white font-bold mb-2">Contact Us</h4>
             <p className="text-gray-400">123 Main Street, City</p>
-            <p className="text-gray-400">Email: info@yourwebsite.com</p>
+            <p className="text-gray-400">Email: info@BrainBox_Toys.com</p>
             <p className="text-gray-400">Phone: 123-456-7890</p>
           </div>
           <div className="w-full md:w-1/4 mb-4 md:mb-0">
