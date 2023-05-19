@@ -1,5 +1,4 @@
 import { Link, useRouteError } from 'react-router-dom'
-import photo from "../../../public/assets/errorPage/404 Error-rafiki.svg"
 
 const ErrorPage = () => {
   const { error, status } = useRouteError()
