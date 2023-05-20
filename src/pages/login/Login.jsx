@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import img from "../../../public/assets/loginpage/4419038.jpg";
+import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
   return (
@@ -23,15 +24,16 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input type="password" name="password" placeholder="Password" className="input input-bordered w-full" /> 
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
-                </label>
+                
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary w-full">Login</button>
+                <input type="submit" className="btn btn-primary w-full" value="Login" />
+                
                 <p className="text-center mt-5 font-bold">New to BrainBox Toys?<Link to='/signup' className="text-amber-600 ">Sign Up</Link> </p>
+
+                <div>
+                    <button className="flex items-center gap-2 btn btn-outline mt-8 mb-3 mx-auto"><FaGoogle/> sign in with google</button>
+                </div>
 
               </div>
             </div>

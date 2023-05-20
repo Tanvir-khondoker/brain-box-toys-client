@@ -28,18 +28,20 @@ const SignUp = () => {
               </div>
               <div className="form-control">
                 <label className="label">
+                  <span className="label-text">Photo URL</span>
+                </label>
+                <input type="text" name="photo" placeholder="Photo URL" className="input input-bordered w-full" /> 
+              </div>
+              <div className="form-control">
+                <label className="label">
                   <span className="label-text">Password</span>
                 </label>
                 <input type="password" name="password" placeholder="Password" className="input input-bordered w-full" /> 
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
-                </label>
+                
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary w-full">Login</button>
-                <p className="text-center mt-5 font-bold">Already have an account?<Link to='/login' className="text-amber-600 ">Sign Up</Link> </p>
+                <input className="btn btn-primary w-full" type="submit" value="Sign Up" />
+                <p className="text-center mt-5 font-bold">Already have an account?<Link to='/login' className="text-amber-600 ">login</Link> </p>
 
               </div>
             </div>
