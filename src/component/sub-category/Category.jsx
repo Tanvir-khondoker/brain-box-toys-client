@@ -17,7 +17,7 @@ const Category = () => {
     }, []);
   
     const uniqueSubcategories = [...new Set(categoryToys.map((toy) => toy.subcategory))];
-    const [activeTab, setActiveTab] = useState(uniqueSubcategories[0]);
+    const [activeTab, setActiveTab] = useState(uniqueSubcategories[1]);
   
     const handleTabSelect = (tabName) => {
       setActiveTab(tabName);
