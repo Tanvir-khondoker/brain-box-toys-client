@@ -1,15 +1,34 @@
 import { Link } from "react-router-dom";
 import img from "../../../public/assets/loginpage/4419038.jpg";
 import { FaGoogle } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const Login = () => {
+   const {signIn} = useContext(AuthContext);
+   const handleLogin = event =>{
+     event.preventDefault();
+     const form = event.target;
+     const email = form.email.value;
+     const password = form.password.value;
+       
+     signIn(email, password)
+     .then(Result =>{
+        const user = Result.user;
+        console.log(user);
+     })
+     .catch(error =>console.log(error));
+
+    }
+
+
   return (
     <div className="hero min-h-screen bg-white">
       <div className="hero-content flex-col lg:flex-row lg:items-center w-full">
         <div className="text-center lg:text-left w-1/2">
           <img src={img} style={{borderRadius:"25px", marginLeft:"130px", marginTop:"60px"}} className="py-3 h-[55vh] rounded-xl mb-2 lg:mb-0 lg:mr-2" alt="" /> 
         </div>
-        <form className="flex flex-col items-center justify-center w-full lg:w-1/2">
+        <form onSubmit={handleLogin} className="flex flex-col items-center justify-center w-full lg:w-1/2">
           <h1 className="text-center text-4xl font-bold mt-10 mb-6">Login Now</h1> 
           <div className="card w-[500px] shadow-2xl bg-base-100"> 
             <div className="card-body space-y-4 p-4 lg:p-8"> 

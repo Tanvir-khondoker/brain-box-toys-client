@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom"; // Assuming you're using React Router
 import logo from "../../../../public/assets/logo.png"
+import { AuthContext } from "../../../provider/AuthProvider";
 
-const Navbar = ({ isLoggedIn, username }) => {
+const Navbar = () => {
+  const {user} =useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -59,7 +61,7 @@ const Navbar = ({ isLoggedIn, username }) => {
           >
             All Toys
           </Link>
-          {isLoggedIn && (
+          {user && (
             <Link
               to="/mytoys"
               className="text-black ml-4 block mt-4 sm:inline-block sm:mt-0"
@@ -67,7 +69,7 @@ const Navbar = ({ isLoggedIn, username }) => {
               My Toys
             </Link>
           )}
-          {isLoggedIn && (
+          {user && (
             <Link
               to="/addtoy"
               className="text-black ml-4 block mt-4 sm:inline-block sm:mt-0"
@@ -83,10 +85,10 @@ const Navbar = ({ isLoggedIn, username }) => {
           </Link>
         </div>
         <div className="flex items-center mt-4 sm:mt-0">
-          {isLoggedIn ? (
+          {user ? (
             <div className="group relative">
               <button className="flex items-center text-black focus:outline-none">
-                <span className="mr-2">Hello, {username}</span>
+                {/* <span className="mr-2">Hello, {username}</span> */}
                 <img
                   src="/path/to/profile-picture.png"
                   alt="User Profile"
