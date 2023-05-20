@@ -19,14 +19,13 @@ const SignUp = () => {
 
      console.log(name, email, photo, password);
        
-     createUser(email, password)
-     .then(result =>{
-        const user = result.user;
-        console.log(user);
-     })
-     .then(error =>{
-        console.log(error);
-     })
+     createUser(email, password, name, photo)
+    .then((user) => {
+      console.log("User created:", user);
+    })
+    .catch((error) => {
+      console.log("Create user error:", error);
+    });
 
    }
    
@@ -83,3 +82,7 @@ const SignUp = () => {
 };
 
 export default SignUp;
+
+
+
+

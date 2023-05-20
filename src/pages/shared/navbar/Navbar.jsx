@@ -1,24 +1,46 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom"; // Assuming you're using React Router
-import logo from "../../../../public/assets/logo.png"
+import { Link } from "react-router-dom";
+import logo from "../../../../public/assets/logo.png";
 import { AuthContext } from "../../../provider/AuthProvider";
 
 const Navbar = () => {
-  const {user} =useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isNameVisible, setIsNameVisible] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        // Sign-out successful.
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  const handleMouseEnter = () => {
+    setIsNameVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsNameVisible(false);
+  };
+
   return (
     <nav className="flex flex-wrap items-center justify-between bg-white text-black p-4 rounded mt-1 h-28">
       <div className="flex items-center">
-        <Link to="/" className="flex flex-col items-center text-black font-bold text-lg">
+        <Link
+          to="/"
+          className="flex flex-col items-center text-black font-bold text-lg"
+        >
           <img
             src={logo}
             alt="Website Logo"
-            style={{width:'100px', height:'70px'}}
+            style={{ width: "100px", height: "70px" }}
             className=" mr-2 rounded-3xl shadow-2xl "
           />
           <p>BrainBox Toys</p>
@@ -86,32 +108,34 @@ const Navbar = () => {
         </div>
         <div className="flex items-center mt-4 sm:mt-0">
           {user ? (
-            <div className="group relative">
+            <div
+              className="flex items-center"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <button className="flex items-center text-black focus:outline-none">
-                {/* <span className="mr-2">Hello, {username}</span> */}
+                {isNameVisible && (
+                  <span className="mr-2 ml-2">{user?.displayName}</span>
+                )}
                 <img
-                  src="/path/to/profile-picture.png"
+                  src={user?.photoURL}
                   alt="User Profile"
-                  className="h-8 w-8 rounded-full"
+                  className="h-11  ml-4 rounded-full"
                 />
               </button>
-              <div className="hidden group-hover:block absolute right-0 mt-2 py-2 bg-white shadow-lg rounded">
-                <Link
-                  to="/profile"
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                >
-                  My Profile
-                </Link>
-                <Link
-                  to="/logout"
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                >
-                  Logout
-                </Link>
-              </div>
+
+              <button
+                onClick={handleLogout}
+                className=" ml-16 btn btn-outline btn-accent"
+              >
+                Logout
+              </button>
             </div>
           ) : (
-            <Link to="/login" className="text-black ml-4 btn btn-outline btn-primary  text-lg ">
+            <Link
+              to="/login"
+              className="text-black ml-4 btn btn-outline btn-primary  text-lg "
+            >
               Login
             </Link>
           )}

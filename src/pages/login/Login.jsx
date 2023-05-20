@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 
 const Login = () => {
-   const {signIn} = useContext(AuthContext);
+   const {signIn,signInWithGoogle} = useContext(AuthContext);
    const handleLogin = event =>{
      event.preventDefault();
      const form = event.target;
@@ -51,7 +51,7 @@ const Login = () => {
                 <p className="text-center mt-5 font-bold">New to BrainBox Toys?<Link to='/signup' className="text-amber-600 ">Sign Up</Link> </p>
 
                 <div>
-                    <button className="flex items-center gap-2 btn btn-outline mt-8 mb-3 mx-auto"><FaGoogle/> sign in with google</button>
+                    <button onClick={signInWithGoogle} className="flex items-center gap-2 btn btn-outline mt-8 mb-3 mx-auto"><FaGoogle/> sign in with google</button>
                 </div>
 
               </div>
