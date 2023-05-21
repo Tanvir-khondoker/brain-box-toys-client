@@ -20,7 +20,7 @@ const Banner = () => {
               Explore the World of Science with our Latest Additions! Get an Exciting Discount of up to 40% on Select Scientific Toys.
             </p>
             <div>
-              <button className="btn btn-primary mr-5">Order now  <FaAngleRight/></button>
+              <button className="btn btn-primary mr-5">Explore now  <FaAngleRight/></button>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Banner = () => {
               Unleash the Power of Learning with our New Educational Toys! Enjoy a Special Discount of up to 30% on Select Items.
             </p>
             <div>
-            <button className="btn btn-primary mr-5">Order now  <FaAngleRight/></button>
+            <button className="btn btn-primary mr-5">Explore now  <FaAngleRight/></button>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ const Banner = () => {
               Elevate Your Language Skills with our Cutting-edge Language Learning Toys! Do nott Miss the Opportunity to Save up to 25% on Select Items.
             </p>
             <div>
-            <button className="btn btn-primary mr-5">Order now  <FaAngleRight/></button>
+            <button className="btn btn-primary mr-5">Explore now  <FaAngleRight/></button>
             </div>
           </div>
         </div>

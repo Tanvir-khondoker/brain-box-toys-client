@@ -126,7 +126,7 @@ const Navbar = () => {
 
               <button
                 onClick={handleLogout}
-                className=" ml-16 btn btn-outline btn-accent"
+                className=" ml-9 btn btn-outline btn-accent"
               >
                 Logout
               </button>

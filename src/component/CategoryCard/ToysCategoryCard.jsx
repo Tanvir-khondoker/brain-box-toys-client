@@ -15,7 +15,7 @@ const ToysCategoryCard = ({toy}) => {
     <h2 className="card-title">{name}</h2>
     <p><span>Price: ${price}</span> <span>Rating : {rating}</span></p>
     <div className="card-actions">
-      <Link to={`/categories/${_id}`}>
+      <Link to={`/details/${_id}`}>
       <button className="btn btn-primary">View Details</button>
       </Link>
     </div>
