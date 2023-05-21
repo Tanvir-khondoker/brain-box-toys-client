@@ -1,6 +1,5 @@
 [
     {
-      "_id": "1",
       "img": "https://i.ibb.co/JjrgrY1/solar-system.jpg",
       "name": "Solar System Model Kit",
       "subcategory": "educational-toys",
@@ -10,7 +9,6 @@
       "description": "Build your own solar system model and learn about the planets and their orbits."
     },
     {
-      "_id": "2",
       "img": "https://i.ibb.co/Sctw2DR/mathematics-puzzle.jpg",
       "name": "Mathematics Puzzle Set",
       "subcategory": "educational-toys",
@@ -20,7 +18,6 @@
       "description": "Challenge your math skills with a set of puzzles that promote logical thinking and problem-solving."
     },
     {
-      "_id": "3",
       "img": "https://i.ibb.co/TK0NX6n/microscope-discovery.webp",
       "name": "Microscope Discovery Kit",
       "subcategory": "educational-toys",
@@ -30,7 +27,6 @@
       "description": "Explore the microscopic world and discover fascinating organisms with this beginner's microscope kit."
     },
     {
-      "_id": "4",
       "img": "https://i.ibb.co/JHK8hMg/Construction-Engineering-Set.jpg",
       "name": "Construction Engineering Set",
       "subcategory": "educational-toys",
@@ -40,7 +36,6 @@
       "description": "Build complex structures and develop engineering skills with this hands-on construction set."
     },
     {
-      "_id": "5",
       "img": "https://i.ibb.co/Zx62QTY/coding-robot-toy.jpg",
       "name": "Coding Robot Toy",
       "subcategory": "educational-toys",
@@ -50,7 +45,6 @@
       "description": "Learn programming concepts while having fun with this interactive coding robot toy."
     },
     {
-      "_id": "6",
       "img": "https://i.ibb.co/y6kC9rd/geography-world-map-puzzle.jpg",
       "name": "Geography World Map Puzzle",
       "subcategory": "educational-toys",
@@ -60,7 +54,6 @@
       "description": "Discover countries, capitals, and landmarks with this educational world map puzzle."
     },
     {
-      "_id": "7",
       "img": "https://i.ibb.co/pLDYLfm/human-antoymy-modle.webp",
       "name": "Human Anatomy Model",
       "subcategory": "educational-toys",
@@ -70,7 +63,6 @@
       "description": "Learn about the human body and its organs with this interactive human anatomy model."
     },
     {
-      "_id": "8",
       "img": "https://i.ibb.co/JqX1jmF/Telescope-with-Tripod.jpg",
       "name": "Telescope with Tripod",
       "subcategory": "educational-toys",
@@ -80,7 +72,6 @@
       "description": "Explore the wonders of the night sky with this beginner's telescope and tripod set."
     },
     {
-      "_id": "9",
       "img": "https://i.ibb.co/dbVy0Ch/Dinosaur-Excavation-Kit.webp",
       "name": "Dinosaur Excavation Kit",
       "subcategory": "educational-toys",
@@ -90,7 +81,6 @@
       "description": "Unearth dinosaur fossils and learn about paleontology with this exciting excavation kit."
     },
     {
-      "_id": "10",
       "img": "https://i.ibb.co/QJr0KHC/Magnetic-Science-Experiment-Set.jpg",
       "name": "Magnetic Science Experiment Set",
       "subcategory": "educational-toys",
@@ -100,7 +90,6 @@
       "description": "Discover the fascinating world of magnets through a series of hands-on science experiments."
     },
     {
-      "_id": "11",
       "img": "https://i.ibb.co/8NqYBxt/Language-Flashcards.png",
       "name": "Language Flashcards",
       "subcategory": "language-toys",
@@ -110,7 +99,6 @@
       "description": "Improve your language skills with a set of interactive flashcards for vocabulary and grammar practice."
     },
     {
-      "_id": "12",
       "img": "https://i.ibb.co/jMnn3gp/Electronic-Language-Translator.jpg",
       "name": "Electronic Language Translator",
       "subcategory": "language-toys",
@@ -120,7 +108,6 @@
       "description": "Easily communicate in different languages using this portable electronic language translator."
     },
     {
-      "_id": "13",
       "img": "https://i.ibb.co/wd4wF5x/Bilingual-Storybook-Set.jpg",
       "name": "Bilingual Storybook Set",
       "subcategory": "language-toys",
@@ -130,7 +117,6 @@
       "description": "Enjoy reading captivating stories in two languages with this bilingual storybook set."
     },
     {
-      "_id": "14",
       "img": "https://i.ibb.co/kgbZQkZ/Spelling-Bee-Game.webp",
       "name": "Spelling Bee Game",
       "subcategory": "language-toys",
@@ -140,7 +126,6 @@
       "description": "Test your spelling skills and have fun with this interactive spelling bee game for kids."
     },
     {
-      "_id": "15",
       "img": "https://i.ibb.co/6BNmqZP/Alphabet-Puzzle-Board.jpg",
       "name": "Alphabet Puzzle Board",
       "subcategory": "language-toys",
@@ -150,7 +135,6 @@
       "description": "Learn the alphabet and develop fine motor skills with this colorful wooden puzzle board."
     },
     {
-      "_id": "16",
       "img": "https://i.ibb.co/sRH6NPr/Foreign-Language-Learning-Kit.png",
       "name": "Foreign Language Learning Kit",
       "subcategory": "language-toys",
@@ -160,7 +144,6 @@
       "description": "Start your language learning journey with a comprehensive kit that includes books, CDs, and flashcards."
     },
     {
-      "_id": "17",
       "img": "https://i.ibb.co/RQPqg6k/Sign-Language-Cards.jpg",
       "name": "Sign Language Cards",
       "subcategory": "language-toys",
@@ -170,7 +153,6 @@
       "description": "Learn basic sign language gestures and communicate using sign language cards."
     },
     {
-      "_id": "18",
       "img": "https://i.ibb.co/PWrdrP8/Language-Memory-Game.jpg",
       "name": "Language Memory Game",
       "subcategory": "language-toys",
@@ -180,7 +162,6 @@
       "description": "Improve your memory and language skills with this fun and educational language memory game."
     },
     {
-      "_id": "19",
       "img": "https://i.ibb.co/Xt38z4F/Spoken-Word-Recording-Pen.jpg",
       "name": "Spoken Word Recording Pen",
       "subcategory": "language-toys",
@@ -190,7 +171,6 @@
       "description": "Record and listen to spoken words to practice pronunciation and language fluency."
     },
     {
-      "_id": "20",
       "img": "https://i.ibb.co/TYNJyxG/Storytelling-Puppet-Theater.jpg",
       "name": "Storytelling Puppet Theater",
       "subcategory": "language-toys",
@@ -200,7 +180,6 @@
       "description": "Create your own puppet shows and enhance storytelling skills with this puppet theater set."
     },
     {
-      "_id": "21",
       "img": "https://i.ibb.co/P4fW2RM/Chemistry-Lab-Set.jpg",
       "name": "Chemistry Lab Set",
       "subcategory": "scientific-toys",
@@ -210,7 +189,6 @@
       "description": "Perform exciting chemistry experiments and learn about chemical reactions with this comprehensive lab set."
     },
     {
-      "_id": "22",
       "img": "https://i.ibb.co/zb9Y5dT/Robotic-Engineering-Kit.webp",
       "name": "Robotic Engineering Kit",
       "subcategory": "scientific-toys",
@@ -220,7 +198,6 @@
       "description": "Build and program your own robots with this hands-on robotic engineering kit."
     },
     {
-      "_id": "23",
       "img": "https://i.ibb.co/svdB0cW/Space-Exploration-Telescope.jpg",
       "name": "Space Exploration Telescope",
       "subcategory": "scientific-toys",
@@ -230,7 +207,6 @@
       "description": "Observe distant planets and celestial objects with this high-quality space exploration telescope."
     },
     {
-      "_id": "24",
       "img": "https://i.ibb.co/nw8Dyhv/Physics-Experiment-Kit.jpg",
       "name": "Physics Experiment Kit",
       "subcategory": "scientific-toys",
@@ -240,7 +216,6 @@
       "description": "Conduct physics experiments and learn fundamental principles with this hands-on experiment kit."
     },
     {
-      "_id": "25",
       "img": "https://i.ibb.co/V9qKLWt/Robotics-Coding-Set.jpg",
       "name": "Robotics Coding Set",
       "subcategory": "scientific-toys",
@@ -250,7 +225,6 @@
       "description": "Learn coding and robotics through interactive projects and coding challenges."
     },
     {
-      "_id": "26",
       "img": "https://i.ibb.co/RyGkyrm/Geology-Rock-Collection.jpg",
       "name": "Geology Rock Collection",
       "subcategory": "scientific-toys",
@@ -260,7 +234,6 @@
       "description": "Explore the world of geology and collect various rocks and minerals with this rock collection kit."
     },
     {
-      "_id": "27",
       "img": "https://i.ibb.co/q7hBTZz/Electronics-Circuit-Kit.jpg",
       "name": "Electronics Circuit Kit",
       "subcategory": "scientific-toys",
@@ -270,7 +243,6 @@
       "description": "Build electronic circuits and learn about electricity with this hands-on electronics kit."
     },
     {
-      "_id": "28",
       "img": "https://i.ibb.co/tMjmLSC/Weather-Science-Kit.jpg",
       "name": "Weather Science Kit",
       "subcategory": "scientific-toys",
@@ -280,7 +252,6 @@
       "description": "Learn about weather phenomena and conduct weather experiments with this weather science kit."
     },
     {
-      "_id": "29",
       "img": "https://i.ibb.co/6F3KwPb/Astronomy-Planetarium-Projector.jpg",
       "name": "Astronomy Planetarium Projector",
       "subcategory": "scientific-toys",
@@ -290,7 +261,6 @@
       "description": "Project images of stars and planets onto your ceiling and learn about astronomy with this planetarium projector."
     },
     {
-      "_id": "30",
       "img": "https://i.ibb.co/5Gf27hw/DNA-Science-Kit.jpg",
       "name": "DNA Science Kit",
       "subcategory": "scientific-toys",

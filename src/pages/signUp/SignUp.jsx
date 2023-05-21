@@ -22,6 +22,7 @@ const SignUp = () => {
      createUser(email, password, name, photo)
     .then((user) => {
       console.log("User created:", user);
+      form.reset();
     })
     .catch((error) => {
       console.log("Create user error:", error);

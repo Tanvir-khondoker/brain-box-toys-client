@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 
+import { Link } from "react-router-dom";
+
 const ToysCategoryCard = ({toy}) => {
 
   const {_id, name, img,subcategory,price,rating} =toy;
@@ -13,7 +15,9 @@ const ToysCategoryCard = ({toy}) => {
     <h2 className="card-title">{name}</h2>
     <p><span>Price: ${price}</span> <span>Rating : {rating}</span></p>
     <div className="card-actions">
+      <Link to={`/categories/${_id}`}>
       <button className="btn btn-primary">View Details</button>
+      </Link>
     </div>
   </div>
 </div>

@@ -85,7 +85,7 @@ const Navbar = () => {
           </Link>
           {user && (
             <Link
-              to="/mytoys"
+              to="/myToys"
               className="text-black ml-4 block mt-4 sm:inline-block sm:mt-0"
             >
               My Toys
@@ -93,7 +93,7 @@ const Navbar = () => {
           )}
           {user && (
             <Link
-              to="/addtoy"
+              to="/addAToy"
               className="text-black ml-4 block mt-4 sm:inline-block sm:mt-0"
             >
               Add A Toy
