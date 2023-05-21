@@ -1,20 +1,63 @@
+/* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const AddAToy = () => {
   const { user } = useContext(AuthContext);
   
    const handleAddAToy = event =>{
     event.preventDefault();
-      const 
+      const form = event.target;
+      const name = form.name.value;
+      const picture = form.picture.value;
+      const seller = form.seller.value;
+      const email = form.email.value;
+      const subcategory = form.subcategory.value;
+      const price = form.price.value;
+      const rating = form.rating.value;
+      const availableQuantity = form.availableQuantity.value;
+      const description = form.description.value;
+   
+      const addedToy ={
+        name: name,
+        picture: picture,
+        seller: seller,
+        email: email,
+        subcategory: subcategory,
+        price: price,
+        rating: rating,
+        availableQuantity: availableQuantity,
+        description: description
 
-   }
+      }
+
+      console.log(addedToy);
+
+      fetch('http://localhost:5000/addedToys',{
+          method: 'POST',
+          headers:{
+              'content-type':'application/json'
+          },
+          body: JSON.stringify(addedToy)
+      })
+      .then(res => res.json())
+      .then(data =>{
+        console.log(data)
+        if(data.insertedId){
+            Swal.fire('new toy successfully added')
+        }
+      })
+   
+   
+    }
 
   return (
     <form onSubmit={handleAddAToy}>
       <h2 className="font-bold text-2xl text-center">Add A Toy</h2>
       <div className="card-body">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          
           <div className="form-control">
             <label className="label">
               <span className="label-text">Name</span>
@@ -94,7 +137,8 @@ const AddAToy = () => {
             </label>
             <input
               type="text"
-              placeholder="email"
+              placeholder="Rating"
+              name="rating"
               className="input input-bordered"
             />
           </div>
