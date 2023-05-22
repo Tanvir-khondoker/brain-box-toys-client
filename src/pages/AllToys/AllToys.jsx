@@ -5,7 +5,7 @@ import AllToysRow from "./AllToysRow";
 const AllToys = () => {
   //  const {user} = useContext(AuthContext);
   const [addedToys, setAddedToys] = useState([]);
-  const url = `http://localhost:5000/addedToys`;
+  const url = `https://ph-11th-server-tanvir.vercel.app/addedToys`;
 
   useEffect(() => {
     fetch(url)

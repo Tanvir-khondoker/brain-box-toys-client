@@ -16,7 +16,7 @@ const ToysRow = ({ addedToy }) => {
       confirmButtonText: 'Yes, delete it!',
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/addedToys/${id}`, {
+        fetch(`https://ph-11th-server-tanvir.vercel.app/addedToys/${id}`, {
           method: 'DELETE',
         })
           .then((res) => res.json())
@@ -36,7 +36,7 @@ const ToysRow = ({ addedToy }) => {
   }
 
   const handleAddingConfirm = (id) => {
-    fetch(`http://localhost:5000/addedToys/${id}`, {
+    fetch(`https://ph-11th-server-tanvir.vercel.app/addedToys/${id}`, {
       method: 'PATCH',
       headers: {
         'content-type': 'application/json',

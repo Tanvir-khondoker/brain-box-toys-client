@@ -6,7 +6,7 @@ const MyToys = () => {
 
    const {user} = useContext(AuthContext);
    const[addedToys, setAddedToys] = useState([]);
-   const url = `http://localhost:5000/addedToys?email=${user?.email}`;
+   const url = `https://ph-11th-server-tanvir.vercel.app/addedToys?email=${user?.email}`;
 
    useEffect(()=>{
      fetch(url)

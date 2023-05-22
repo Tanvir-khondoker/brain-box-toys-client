@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         {
             path:'/details/:id',
             element:<PrivateRoutes><Details/></PrivateRoutes>,
-            loader:({params})=>fetch(`http://localhost:5000/details/${params.id}`)
+            loader:({params})=>fetch(`https://ph-11th-server-tanvir.vercel.app/details/${params.id}`)
         },
         {
             path:'/blogs',

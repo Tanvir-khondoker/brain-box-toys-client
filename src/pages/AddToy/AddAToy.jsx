@@ -34,7 +34,7 @@ const AddAToy = () => {
 
       console.log(addedToy);
 
-      fetch('http://localhost:5000/addedToys',{
+      fetch('https://ph-11th-server-tanvir.vercel.app/addedToys',{
           method: 'POST',
           headers:{
               'content-type':'application/json'
