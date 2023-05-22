@@ -12,23 +12,25 @@ const MyToys = () => {
      fetch(url)
      .then(res => res.json())
      .then(data => setAddedToys(data))
-   }, [])  
+   }, [url])  
 
     return (
-        <div className="overflow-x-auto w-full">
+        <div className="overflow-x-auto w-full mt-6 mb-7">
+            <h2 className="font-bold text-xl text-center mt-3 mb-4">My Toys</h2>
   <table className="table w-full">
     {/* head */}
     <thead>
       <tr>
         <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
+
+        </th>
+        <th>
+          Photo
         </th>
         <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
-        <th></th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
